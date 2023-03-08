@@ -3,7 +3,7 @@ import * as Styled from "./styles";
 
 export function Heading({
   children,
-  colorDark = false,
+  colorDark = true,
   as = "h1",
   size = "huge",
   uppercase = false

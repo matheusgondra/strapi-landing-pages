@@ -14,6 +14,16 @@ describe("<TextComponent />", () => {
       <TextComponent>Um texto qualquer</TextComponent>
     );
 
-    expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toMatchInlineSnapshot(`
+      .c0 {
+        font-size: 2.4rem;
+      }
+
+      <p
+        class="c0"
+      >
+        Um texto qualquer
+      </p>
+    `);
   });
 });

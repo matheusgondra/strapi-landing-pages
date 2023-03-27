@@ -1,9 +1,12 @@
 import * as Styled from "./styles";
 import P from "prop-types";
+import { SectionContainer } from "../SectionContainer";
 
 export function SectionBackground({ children, background = false }) {
   return (
-    <Styled.Container background={background}>{children}</Styled.Container>
+    <Styled.Container background={background}>
+      <SectionContainer>{children}</SectionContainer>
+    </Styled.Container>
   );
 }
 
